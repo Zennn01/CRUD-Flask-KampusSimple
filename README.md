@@ -1,1 +1,1 @@
-# structure-simple-flask
+# CRUD Kampus simple
