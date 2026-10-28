@@ -1,11 +1,11 @@
 from flask import Blueprint, jsonify, g
-from middlewares.jwt_required import jwt_required
+from middlewares.role_middleware import login_required
 from config.database import get_connection
 
 user_bp = Blueprint("user", __name__)
 
 @user_bp.get("/me")
-@jwt_required
+@login_required
 def get_me():
     user = g.user
     role = user["role"]
