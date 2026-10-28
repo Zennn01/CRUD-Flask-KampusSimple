@@ -24,6 +24,7 @@
 h1, h2, h3, p { margin: 0; }
 h1 { font-size: clamp(27px, 3vw, 37px); letter-spacing: -1.5px; line-height: 1; font-weight: 700; color: #1e2927; }
 .top-actions { display: flex; align-items: center; gap: 19px; }
+.role-badge { border: 1px solid #dfe4db; border-radius: 999px; padding: 8px 12px; color: #47766c; background: #f1f6ed; font-size: 11px; font-weight: 700; }
 .role-switch, .filter-button { border: 1px solid #dfe4db; background: transparent; color: #53615b; border-radius: 6px; padding: 9px 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; }
 .role-switch, .filter-button, .primary-button, .text-button, .quick-panel button, .row-menu, .close-button { cursor: pointer; transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
 .role-switch:hover, .filter-button:hover { border-color: #a7baac; transform: translateY(-2px); }

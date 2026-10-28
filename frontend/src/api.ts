@@ -63,6 +63,7 @@ export const api = {
   getClasses: () => request<ApiClass[]>('/kelas'),
   getCourses: () => request<ApiCourse[]>('/matkul'),
   getStudents: () => request<ApiStudent[]>('/mahasiswa'),
+  getMyStudent: () => request<ApiStudent>('/mahasiswa/me'),
   getProfile: () => request<{ user: { role: string }; data: Record<string, unknown> }>('/me'),
   createClass: (nama_kelas: string) => request<{ id: number }>('/kelas', { method: 'POST', body: JSON.stringify({ nama_kelas }) }),
   createCourse: (payload: { nama_matakuliah: string; sks: number; id_kelas: number; id_dosen: number }) => request<{ id: number }>('/matkul', { method: 'POST', body: JSON.stringify(payload) }),

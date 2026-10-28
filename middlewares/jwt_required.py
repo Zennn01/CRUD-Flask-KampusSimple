@@ -10,6 +10,9 @@ def init_jwt(app):
     @app.before_request
     def check_jwt():
 
+        if request.method == "OPTIONS":
+            return "", 204
+
         if request.path in EXCLUDE_PATHS:
             return
 
